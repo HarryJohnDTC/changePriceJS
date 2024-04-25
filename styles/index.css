@@ -148,6 +148,36 @@ h2 {
 #priceProfessional {
     color: hsl(240, 78%, 98%);
 }
+@media screen and (max-width: 768px) {
+    body {
+        margin: 20px;
+        padding: 20px;
+    }
+    header {
+        margin-top: 20px;
+    }
+    .switch-container {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    main {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+    article {
+        width: 100%; 
+        height: auto; 
+    }
+    #professional {
+        height: auto; 
+    }
+    .learnMore {
+        width: 100%; 
+    }
+    .monthlyPrice {
+        font-size: 30px; 
+    }
+}
 
 
 
