@@ -158,14 +158,13 @@ h2 {
     }
     .switch-container {
         width: 100%;
-        grid-template-columns: repeat(3, 1fr); 
     }
     main {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         gap: 20px; 
     }
     article {
-        width: 100%; 
+        width: 90%; 
         height: auto; 
     }
     #professional {
