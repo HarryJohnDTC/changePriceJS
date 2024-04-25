@@ -12,11 +12,33 @@ body {
     background-repeat: no-repeat, no-repeat;
     background-position: top 0rem right 0rem, bottom 0rem left 0rem;
 }
+.darkMode {
+        background-color: black;
+        color: white;
+        article {
+            background-color: rgba(251, 246, 252, 0.233);
+        }
+        #professional {
+            background: linear-gradient(to right, hsla(184, 72%, 79%, 0.5), hsla(246, 63%, 64%, 0.5));
+        }
+        h2, .price, .informations, .informationSendUp, .monthlyPrice {
+            color: hsl(240, 78%, 98%);
+        }
+}
 header {
     text-align: center;
     margin-top: 75px;
 }
 .switch-container {
+    width: 300px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    text-align: center;
+    column-gap: 1px; 
+  }
+.dark-container {
     width: 300px;
     margin: 50px auto;
     display: grid;
@@ -35,8 +57,21 @@ label {
 .switch-checkbox {
     display: none;
 }
+.dark-checkbox {
+    display: none;
+}
 
 .switch-label {
+    display: inline-block;
+    width: 45px;
+    height: 25px;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    justify-self: center;
+}
+.dark-label {
     display: inline-block;
     width: 45px;
     height: 25px;
@@ -58,8 +93,22 @@ label {
     left: 0;
     transition: left 0.3s;
 }
+.dark-label::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.3s;
+}
 
 .switch-checkbox:checked + .switch-label::after {
+    left: 20px;
+}
+.dark-checkbox:checked + .dark-label::after {
     left: 20px;
 }
 
